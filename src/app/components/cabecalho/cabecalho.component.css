@@ -10,6 +10,7 @@
 .container {
     display: flex;
     align-items: center;
+    margin: 0 0.5em;
 }
 
 .container__logo {
@@ -22,6 +23,7 @@
     border-right: 2px solid var(--cor-vermelho);
 }
 
+.container__navegacao_menu,
 .container__navegacao {
     display: flex;
     align-items: center;
@@ -90,7 +92,7 @@ a {
     color: var(--cor-de-texto);
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1070px) {
     .usuario_botoes span {
         display: none;
     }
