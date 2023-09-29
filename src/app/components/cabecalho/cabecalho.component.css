@@ -80,3 +80,21 @@ a {
     text-decoration: none;
     color: var(--cor-de-texto);
 }
+
+@media screen and (max-width: 1050px) {
+    .usuario_botoes span {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .container__navegacao {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container__logo span {
+        display: none;
+    }
+}
