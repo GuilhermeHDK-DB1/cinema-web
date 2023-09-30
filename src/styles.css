@@ -8,10 +8,8 @@
 
 :root {
     --cor-de-fundo-cabecalho: rgb(184, 4, 4);
-    /* --cor-de-fundo-cabecalho: rgb(196, 14, 14); */
-    /* --cor-de-fundo-cabecalho: rgba(35, 30, 30); */
     --cor-de-icone-cabecalho: #dde3f8;
-    --cor-de-fundo-rodape: rgba(38, 45, 49, 0.6);
+    --cor-de-fundo-rodape: rgba(25, 25, 25);
     --cor-de-fundo: rgb(43, 40, 40);
     --cor-vermelho: #9e1010;
 

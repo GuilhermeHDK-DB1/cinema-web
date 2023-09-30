@@ -1,5 +1,5 @@
 .rodape {
-    background-color: var(--cor-de-fundo-cabecalho);
+    background-color: var(--cor-de-fundo-rodape);
 }
 
 .container {
@@ -14,27 +14,30 @@
     justify-content: center;
     height: 7rem;
     width: 100%;
-    font-size: 30px;
-    color: var(--cor-de-texto);
     background-image: url('../../../assets/aplicativos/imagem-background.jpg');
-    background-color: #cccccc; /* Used if the image is unavailable */
+    background-color: #cccccc;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .aplicativo_descricao {
     padding: 0.5em;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--cor-de-texto);
+    background-color: var(--cor-de-fundo-rodape);
+    border-radius: 0.5em;
+    margin-right: 0.5em;
 }
 
 .aplicativo {
-    padding: 0.25em;
+    padding: 0.5em;
 }
 
-.icones-svg-redes-sociais {
-    height: 1rem;
+.aplicativo img{
+    height: 3.5em;
     width: auto;
-    fill: var(--cor-de-icone);
-    margin-right: 0.5rem;
 }
 
 .container__links {
@@ -43,12 +46,24 @@
     height: auto;
     justify-content: space-between;
     background-color: rgb(190,190,190);
+    flex-wrap: wrap;
+}
+
+.teste1 {
+
 }
 
 .links_lista {
     display: flex;
     flex-direction: column;
-    padding: 2rem 1rem;
+    padding: 1rem;
+}
+
+.icones-svg-redes-sociais {
+    height: 1rem;
+    width: auto;
+    fill: var(--cor-de-icone);
+    margin-right: 0.5rem;
 }
 
 .container__pagamento {
@@ -70,11 +85,13 @@
     flex-wrap: wrap;
     width: 16vw;
     background-color: aqua;
+    padding: 0.5rem;
 }
 
 
 .lista_descricao {
-    padding: 0.25em;
+    padding: 0 1rem;
+    margin-top: 1em;
     font-size: 16px;
 }
 
@@ -92,3 +109,63 @@ a {
     color: var(--cor-de-texto);
 }
 
+
+@media screen and (max-width: 1400px) {
+    .container__links {
+        width: 100vw;
+        height: auto;
+        justify-content: space-around;
+    }
+
+    .container__pagamento {
+        width: 90vw;
+        height: auto;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 1225px) {    
+    .container__aplicativo {
+        height: 4rem;
+    }
+
+    .aplicativo_descricao {
+        padding: 0.5em;
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    .aplicativo img{
+        height: 2.5em;
+        width: auto;
+    }
+    
+    .container__pagamento {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .pagamento_lista {
+        width: auto;
+        padding: 0 0.5rem;
+    }
+
+    .lista_descricao {
+        padding: 1rem;
+        margin: 0;
+    }
+    
+    .links_lista {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .aplicativo_descricao {
+        display: none;
+    }
+
+    .lista_descricao {
+        padding: 0.5rem;
+    }
+}
