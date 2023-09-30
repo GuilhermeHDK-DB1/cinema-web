@@ -42,7 +42,7 @@
 
 .container__links {
     display: flex;
-    width: 70vw;
+    width: 80vw;
     height: auto;
     justify-content: space-between;
     background-color: rgb(190,190,190);
@@ -71,7 +71,7 @@
     /* align-items: center; */
     justify-content: space-between;
     height: 7rem;
-    width: 70vw;
+    width: 80vw;
     background-color: rgb(190,190,190);
 }
 
@@ -83,7 +83,7 @@
     display: flex;
     /* justify-content: space-between; */
     flex-wrap: wrap;
-    width: 16vw;
+    width: 20vw;
     background-color: aqua;
     padding: 0.5rem;
 }
