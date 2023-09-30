@@ -1,7 +1,7 @@
 .cabecalho {
     height: 80px;
-    background-color: var(--cor-de-fundo-cabecalho);
-    color: var(--cor-de-texto);
+    /* background-color: var(--cor-de-fundo-cabecalho); */
+    background: var(--cor-de-fundo-cabecalho);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -107,7 +107,7 @@ a {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 510px) {
     .container__logo span {
         display: none;
     }
