@@ -13,19 +13,13 @@
     align-items: center;
     justify-content: center;
     height: 7rem;
-    width: 70vw;
+    width: 100%;
     font-size: 30px;
     color: var(--cor-de-texto);
-    background-color: rgb(190,190,190);
-}
-
-.container__links {
-    display: flex;
-    align-items: start;
-    width: 70vw;
-    height: auto;
-    justify-content: space-between;
-    background-color: rgb(190,190,190);
+    background-image: url('../../../assets/aplicativos/imagem-background.jpg');
+    background-color: #cccccc; /* Used if the image is unavailable */
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .aplicativo_descricao {
@@ -43,12 +37,41 @@
     margin-right: 0.5rem;
 }
 
+.container__links {
+    display: flex;
+    width: 70vw;
+    height: auto;
+    justify-content: space-between;
+    background-color: rgb(190,190,190);
+}
+
 .links_lista {
     display: flex;
     flex-direction: column;
-    align-items: start;
     padding: 2rem 1rem;
 }
+
+.container__pagamento {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    height: 7rem;
+    width: 70vw;
+    background-color: rgb(190,190,190);
+}
+
+.teste {
+    background-color: blueviolet;
+}
+
+.pagamento_lista {
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    width: 16vw;
+    background-color: aqua;
+}
+
 
 .lista_descricao {
     padding: 0.25em;
