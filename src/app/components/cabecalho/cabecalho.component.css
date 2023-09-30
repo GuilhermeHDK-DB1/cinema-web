@@ -1,6 +1,7 @@
 .cabecalho {
     height: 80px;
-    background-color: var(--cor-de-fundo-cabecalho);
+    /* background-color: var(--cor-de-fundo-cabecalho); */
+    background: var(--cor-de-fundo-cabecalho);
     display: flex;
     align-items: center;
     justify-content: space-between;
