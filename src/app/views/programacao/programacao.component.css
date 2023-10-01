@@ -1,0 +1,18 @@
+.date-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+  
+.date-buttons button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.date-buttons button:hover {
+    background-color: #0056b3;
+}
