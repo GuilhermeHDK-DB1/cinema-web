@@ -14,7 +14,7 @@ export class FilmesComponent {
     id: 70,
     nomeDoFilme: "Ação Explosiva",
     duracao: 130,
-    classificacao: "teste",//"PG-13",
+    classificacao: "PG-13",
     genero: "Ação",
     horario: "2023-10-01T19:00:00",
     idioma: 0,

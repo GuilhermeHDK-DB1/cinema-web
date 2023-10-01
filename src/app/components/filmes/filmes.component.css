@@ -1,3 +1,59 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 275px;
+  height: 550px;
+  padding: 0.5rem;
+  border: 1px solid var(--cor-vermelho);
+  border-radius: 0.5rem;
+  filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.2));
+
+  margin: 1rem;
+  /* background-color: aqua; */
+}
+
+.filme-imagem {
+  width: 275px;
+  height: 380px;
+  border-radius: 0.5rem;
+}
+
+.titulo {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0.5rem;
+  color: var(--cor-de-texto)
+}
+
+.container-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo-filme,
+.info-filme,
+.info-sala,
+.horarios-filme {
+  display: flex;
+}
+
+.badge {
+  padding: 0.3rem 0.5rem;
+  margin: 0.25rem;
+  color: var(--cor-de-texto);
+  border: 1px solid var(--cor-vermelho);
+  border-width: 0 0 1px 0;
+  border-radius: 0.5rem;
+  background-color: var(--cor-badge);
+}
+
+.horarios-filme {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+
+/* 
 .card-livro {
     display: flex;
     width: 384px;
@@ -10,14 +66,7 @@
     min-width: 198px;
   }
   
-  .card {
-    display: flex;
-    width: 384px;
-    height: 310px;
-    filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.2));
-    margin: 24px;
-    border-radius: 8px 0px 0px 8px;
-  }
+ 
   
   .info-card {
     padding-top: 7px;
@@ -77,4 +126,4 @@
   
   button:hover {
     background: #050C42;
-  }
+  } */
