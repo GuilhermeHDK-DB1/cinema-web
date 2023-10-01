@@ -9,22 +9,24 @@
         </div>
         <div class="info-filme">
             <p class="badge ff-montserrat">{{ filme.duracao }} min</p>
-            <p class="badge ff-montserrat">{{ filme.idioma }}</p>
+            <p class="badge ff-montserrat">{{ filme.idioma | idioma }}</p>
             <p class="badge ff-montserrat">{{ filme.genero }}</p>
-            <p class="badge ff-montserrat">{{ filme.classificacao }}</p>
         </div>
         <div class="info-sala">
             <p class="badge ff-montserrat">{{ filme.nomeDaSala }}</p>
-            <p class="badge ff-montserrat">{{ filme.salaVip }}</p>
-            <p class="badge ff-montserrat">{{ filme.sala3D }}</p>
+            <p class="badge ff-montserrat" *ngIf="filme.salaVip">{{ filme.salaVip | salaVip }}</p>
+            <p class="badge ff-montserrat">{{ filme.sala3D | sala3D }}</p>
+            <p class="badge ff-montserrat" [ngClass]="'classificacao_' + filme.classificacao">{{ filme.classificacao | classificacaoIndicativa}}</p>
         </div>
         <div class="horarios-filme">
             <p class="badge ff-montserrat">{{ filme.horario | date:'HH:mm' }}</p>
         </div>
-    
-    
-    <!-- <button (click)="onModalChange(true)">Mais detalhes</button> -->
     </div>
+    <button class="botao-comprar-ingressos ff-montserrat">
+        Comprar Ingressos
+    </button>
+
+    <!-- <button (click)="onModalChange(true)">Mais detalhes</button> -->
 </section>
     <!-- <div *ngIf="modalAberto">
         <app-modal-filme [filme]="filme" (mudouModal)="onModalChange($event)"></app-modal-filme>
