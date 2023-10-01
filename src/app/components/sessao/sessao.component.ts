@@ -1,16 +1,18 @@
 import { Component, Input } from '@angular/core';
-import { Filme } from 'src/app/models/Filme';
+import { Sessao } from 'src/app/models/Sessao';
 
 @Component({
-  selector: 'app-filmes',
-  templateUrl: './filmes.component.html',
-  styleUrls: ['./filmes.component.css']
+  selector: 'app-sessao',
+  templateUrl: './sessao.component.html',
+  styleUrls: ['./sessao.component.css']
 })
-export class FilmesComponent {
+export class SessaoComponent {
 
   constructor() {}
 
-  @Input() filme: Filme = {
+  // @Input() filme: Filme;
+
+  @Input() sessao: Sessao = {
     id: 70,
     nomeDoFilme: "Ação Explosiva",
     duracao: 130,

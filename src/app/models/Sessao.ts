@@ -1,4 +1,4 @@
-export interface Filme {
+export interface Sessao {
     id: number,
     nomeDoFilme: string,
     duracao: number,

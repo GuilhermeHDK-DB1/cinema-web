@@ -1,0 +1,33 @@
+<section class="container">
+    <img
+        class="filme-imagem"
+        src="{{ sessao.thumbnail != undefined ? sessao.thumbnail : '../../../assets/filmes/arquivo-indisponivel.svg'}}"
+        alt="Capa do filme">
+    <div class="container-info">
+        <div class="titulo-filme">
+            <p class="titulo ff-montserrat">{{ sessao.nomeDoFilme | slice : 0 : 30 }}</p>
+        </div>
+        <div class="info-filme">
+            <p class="badge ff-montserrat">{{ sessao.duracao }} min</p>
+            <p class="badge ff-montserrat">{{ sessao.idioma | idioma }}</p>
+            <p class="badge ff-montserrat">{{ sessao.genero }}</p>
+        </div>
+        <div class="info-sala">
+            <p class="badge ff-montserrat">{{ sessao.nomeDaSala }}</p>
+            <p class="badge ff-montserrat" *ngIf="sessao.salaVip">{{ sessao.salaVip | salaVip }}</p>
+            <p class="badge ff-montserrat">{{ sessao.sala3D | sala3D }}</p>
+            <p class="badge ff-montserrat" [ngClass]="'classificacao_' + sessao.classificacao">{{ sessao.classificacao | classificacaoIndicativa}}</p>
+        </div>
+        <div class="horarios-filme">
+            <p class="badge ff-montserrat">{{ sessao.horario | date:'HH:mm' }}</p>
+        </div>
+    </div>
+    <button class="botao-comprar-ingressos ff-montserrat">
+        Comprar Ingressos
+    </button>
+
+    <!-- <button (click)="onModalChange(true)">Mais detalhes</button> -->
+</section>
+    <!-- <div *ngIf="modalAberto">
+        <app-modal-filme [filme]="filme" (mudouModal)="onModalChange($event)"></app-modal-filme>
+    </div> -->

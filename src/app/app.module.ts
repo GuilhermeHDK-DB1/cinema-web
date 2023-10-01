@@ -12,7 +12,7 @@ import { EmBreveComponent } from './views/em-breve/em-breve.component';
 import { registerLocaleData } from '@angular/common';
 
 import localePT from '@angular/common/locales/pt';
-import { FilmesComponent } from './components/filmes/filmes.component';
+import { SessaoComponent } from './components/sessao/sessao.component';
 import { IdiomaPipe } from './pipes/idioma.pipe';
 import { SalaVipPipe } from './pipes/sala-vip.pipe';
 import { Sala3DPipe } from './pipes/sala-3d.pipe';
@@ -27,7 +27,7 @@ registerLocaleData(localePT);
     ProgramacaoComponent,
     DateButtonsComponent,
     EmBreveComponent,
-    FilmesComponent,
+    SessaoComponent,
     IdiomaPipe,
     SalaVipPipe,
     Sala3DPipe,
