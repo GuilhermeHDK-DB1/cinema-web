@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { ProgramacaoService } from 'src/app/services/programacao-service.service';
+import { Component, OnInit } from '@angular/core';
 import { highlightedStateTrigger } from 'src/app/animations';
 
 @Component({
@@ -9,12 +10,14 @@ import { highlightedStateTrigger } from 'src/app/animations';
     highlightedStateTrigger
   ]
 })
-export class DateButtonsComponent {
+export class DateButtonsComponent implements OnInit{
   
   public datas: Date[] = [];
   selectedDateIndex: number | null = null;
 
-  constructor() { 
+  constructor(private service: ProgramacaoService) { }
+
+  ngOnInit(): void {
     for(let i = 0; i < 7; i++) {
       const data = new Date();
       data.setDate(data.getDate() + i);

@@ -1,2 +1,4 @@
 <app-date-buttons></app-date-buttons>
-<app-sessao></app-sessao>
+<div *ngFor="let sessao of listaDeSessoes">
+    <app-sessao [sessao]="sessao"></app-sessao>
+</div>
