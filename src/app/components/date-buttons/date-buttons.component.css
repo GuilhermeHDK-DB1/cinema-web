@@ -38,9 +38,15 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; */
+
+    /* color: var(--cor-vermelho);
+    border-color: var(--cor-vermelho); */
+}
+
+.botao.selected {
     color: var(--cor-vermelho);
     border-color: var(--cor-vermelho);
-}
+  }
 
 @media screen and (max-width: 1225px) { 
     .botao_data_dia {
