@@ -1,1 +1,37 @@
-<img src="../../../assets/filmes/arquivo-indisponivel.svg">
+<div class="card">
+    <img
+      src="{{ filme.thumbnail != undefined ? filme.thumbnail : '../../../assets/filmes/arquivo-indisponivel.svg'}}"
+      alt="Capa do filme">
+    <div class="info-card">
+      <p class="titulo">{{ filme.nomeDoFilme | slice : 0 : 30 }}</p>
+
+      <p class="duracao">Duracao:</p>
+      <p class="resultado">{{ filme.duracao }}</p>
+
+      <p class="informacoes">Classificação:</p>
+      <p class="resultado">{{ filme.classificacao }}</p>
+      
+      <p class="informacoes">Gênero:</p>
+      <p class="resultado">{{ filme.genero }}</p>
+
+      <p class="informacoes">Horário:</p>
+      <p class="resultado">{{ filme.horario | date:'hh:mm' }}</p>
+
+      <p class="informacoes">Idioma:</p>
+      <p class="resultado">{{ filme.idioma }}</p>
+      
+      <p class="informacoes">Sala:</p>
+      <p class="resultado">{{ filme.nomeDaSala }}</p>
+      
+      <p class="informacoes">Sala VIP:</p>
+      <p class="resultado">{{ filme.salaVip }}</p>
+      
+      <p class="informacoes">Sala 3D:</p>
+      <p class="resultado">{{ filme.sala3D }}</p>
+
+      <!-- <button (click)="onModalChange(true)">Mais detalhes</button> -->
+    </div>
+    </div>
+    <!-- <div *ngIf="modalAberto">
+        <app-modal-filme [filme]="filme" (mudouModal)="onModalChange($event)"></app-modal-filme>
+    </div> -->
