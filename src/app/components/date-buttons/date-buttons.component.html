@@ -1,0 +1,11 @@
+<section class="container">
+    <div class="date-buttons">
+        <button class="botao" *ngFor="let data of datas" (click)="selecionarData(data)">
+            <div class="botao_data ff-montserrat">
+                <span class="botao_data_dia">{{ data | date:'dd' : 'pt-BR' }}</span>
+                <span class="botao_data_mes">{{ data | date:' / MM' : 'pt-BR' }}</span>
+            </div>
+            <span class="botao_dia_da_semana">{{ data | date:'EEE' : 'pt-BR' }}</span>
+        </button>
+    </div>
+</section>

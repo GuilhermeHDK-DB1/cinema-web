@@ -7,18 +7,5 @@ import { Component } from '@angular/core';
 })
 export class ProgramacaoComponent {
 
-  public datas: Date[] = [];
-
-  constructor() { 
-    for(let i = 0; i < 7; i++) {
-      const data = new Date();
-      data.setDate(data.getDate() + i);
-      this.datas.push(data);
-    }
-  }
-
-
-  public selecionarData(data: Date) {
-    console.log(data);
-  }
+  
 }
