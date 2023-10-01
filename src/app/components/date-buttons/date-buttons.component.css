@@ -1,0 +1,68 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-de-fundo);
+}
+
+.date-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+  
+.botao {
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    color: var(--cor-cinza-apagado);
+    cursor: pointer;
+    margin: 1em 3em;
+    border: 1px solid var(--cor-cinza-apagado);
+    border-width: 0 0 2px 0;
+}
+
+.botao_data_dia {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.botao_data_mes,
+.botao_dia_da_semana {
+    font-size: 16px;
+    font-weight: 300;
+}
+  
+.botao:hover {
+    /* background: var(--vermelho-gradiente);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+
+    /* color: var(--cor-vermelho);
+    border-color: var(--cor-vermelho); */
+}
+
+.botao.selected {
+    color: var(--cor-vermelho);
+    border-color: var(--cor-vermelho);
+  }
+
+@media screen and (max-width: 1225px) { 
+    .botao_data_dia {
+        font-size: 18px;
+        font-weight: 500;
+    }
+    
+    .botao_data_mes,
+    .botao_dia_da_semana {
+        font-size: 12px;
+        font-weight: 300;
+    }
+ }
+
+@media screen and (max-width: 790px) { 
+
+}
+
+@media screen and (max-width: 500px) { }
