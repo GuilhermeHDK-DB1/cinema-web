@@ -18,8 +18,9 @@ export class DateButtonsComponent {
     for(let i = 0; i < 7; i++) {
       const data = new Date();
       data.setDate(data.getDate() + i);
-      this.datas.push(data);
+      this.datas.push(data);       
     }
+    this.selectedDateIndex = 0;
   }
 
   setIndex(index: number) {
