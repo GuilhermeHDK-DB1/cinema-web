@@ -12,6 +12,7 @@ import { EmBreveComponent } from './views/em-breve/em-breve.component';
 import { registerLocaleData } from '@angular/common';
 
 import localePT from '@angular/common/locales/pt';
+import { FilmesComponent } from './components/filmes/filmes.component';
 registerLocaleData(localePT);
 
 @NgModule({
@@ -21,7 +22,8 @@ registerLocaleData(localePT);
     RodapeComponent,
     ProgramacaoComponent,
     DateButtonsComponent,
-    EmBreveComponent
+    EmBreveComponent,
+    FilmesComponent
   ],
   imports: [
     BrowserModule,
