@@ -17,6 +17,7 @@ import { IdiomaPipe } from './pipes/idioma.pipe';
 import { SalaVipPipe } from './pipes/sala-vip.pipe';
 import { Sala3DPipe } from './pipes/sala-3d.pipe';
 import { ClassificacaoIndicativaPipe } from './pipes/classificacao-indicativa.pipe';
+import { HttpClientModule } from '@angular/common/http';
 registerLocaleData(localePT);
 
 @NgModule({
@@ -36,7 +37,8 @@ registerLocaleData(localePT);
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
   providers: [
     { provide: LOCALE_ID, useValue: 'pt-br' },
