@@ -1,4 +1,4 @@
-export interface Filme {
+export interface SessaoTeste {
     id: number,
     nomeDoFilme: string,
     duracao: number,
@@ -10,7 +10,6 @@ export interface Filme {
     salaVip: boolean,
     sala3D: boolean,
     capacidadeDisponivel: number
-    thumbnail?: string
     
     // id: 70,
     // nomeDoFilme: Ação Explosiva,
