@@ -1,0 +1,93 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: cemnter;
+  width: 300px;
+  height: auto;
+  padding: 0.5rem;
+  border: 1px solid var(--cor-vermelho);
+  border-radius: 0.5rem;
+  filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.2));
+
+  margin: 1rem;
+  /* background-color: aqua; */
+}
+
+.filme-imagem {
+  width: 300px;
+  height: 380px;
+  border-radius: 0.5rem;
+}
+
+.titulo {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0.5rem;
+  color: var(--cor-de-texto)
+}
+
+.container-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo-filme,
+.info-filme,
+.info-sala,
+.horarios-filme {
+  display: flex;
+}
+
+
+
+.badge {
+  padding: 0.3rem 0.5rem;
+  margin: 0.25rem;
+  min-width: 0.8rem;
+  font-size: 13px;
+  text-align: center;
+  color: var(--cor-de-texto);
+  border: 1px solid var(--cor-vermelho);
+  border-width: 0 0 1px 0;
+  border-radius: 0.5rem;
+  background-color: var(--cor-badge);
+}
+
+.horarios-filme p{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* L */
+.classificacao_G {
+  background-color: rgb(31, 196, 31);
+}
+/* 10 */
+.classificacao_PG {
+  background-color: rgb(28, 195, 218);
+}
+/* 14 */
+.classificacao_R {
+  background-color: rgb(209, 102, 31);
+}
+/* 16 */
+.classificacao_PG-13 {
+  background-color: rgb(221, 15, 15);
+}
+/* 18 */
+.classificacao_NC-17 {
+  background-color: black;
+}
+
+.botao-comprar-ingressos {
+  align-self: center;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 1rem;
+  width: 80%;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: rgb(206, 160, 33);
+  margin: 0.5rem;
+}

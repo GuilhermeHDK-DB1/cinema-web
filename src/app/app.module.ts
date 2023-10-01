@@ -12,6 +12,11 @@ import { EmBreveComponent } from './views/em-breve/em-breve.component';
 import { registerLocaleData } from '@angular/common';
 
 import localePT from '@angular/common/locales/pt';
+import { FilmesComponent } from './components/filmes/filmes.component';
+import { IdiomaPipe } from './pipes/idioma.pipe';
+import { SalaVipPipe } from './pipes/sala-vip.pipe';
+import { Sala3DPipe } from './pipes/sala-3d.pipe';
+import { ClassificacaoIndicativaPipe } from './pipes/classificacao-indicativa.pipe';
 registerLocaleData(localePT);
 
 @NgModule({
@@ -21,7 +26,12 @@ registerLocaleData(localePT);
     RodapeComponent,
     ProgramacaoComponent,
     DateButtonsComponent,
-    EmBreveComponent
+    EmBreveComponent,
+    FilmesComponent,
+    IdiomaPipe,
+    SalaVipPipe,
+    Sala3DPipe,
+    ClassificacaoIndicativaPipe
   ],
   imports: [
     BrowserModule,
