@@ -1,4 +1,14 @@
-<app-date-buttons></app-date-buttons>
-<div *ngFor="let sessao of listaDeSessoes">
-    <app-sessao [sessao]="sessao"></app-sessao>
+<app-date-buttons
+    (emitirData)="consultarSessoesPelaData($event)"
+    >
+</app-date-buttons>
+<div class="mural" *ngIf="listaDeSessoes.length > 0, else listaDeSessoesVazia">
+    <div *ngFor="let sessao of listaDeSessoes">
+        <app-sessao [sessao]="sessao"></app-sessao>
+    </div>
 </div>
+<ng-template #listaDeSessoesVazia>
+    <div class="lista-de-sessoes-vazia ff-montserrat">
+        <p>Isso é tudo pessoal...</p>
+    </div>
+</ng-template>
