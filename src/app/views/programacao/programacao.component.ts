@@ -22,7 +22,10 @@ export class ProgramacaoComponent implements OnInit{
       });
   }
 
-  public consultarSessoesPelaData() {
+  public consultarSessoesPelaData(data: Date) {
+    console.log("consultarSessoesPelaData", data);
+
+
     this.service.consultarSessoesPelaData('2023-10-01')
       .subscribe(listaDeSessoes => {
       this.listaDeSessoes = listaDeSessoes;

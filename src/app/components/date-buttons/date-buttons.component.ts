@@ -1,5 +1,5 @@
 import { ProgramacaoService } from 'src/app/services/programacao-service.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { highlightedStateTrigger } from 'src/app/animations';
 
 @Component({
@@ -15,7 +15,9 @@ export class DateButtonsComponent implements OnInit{
   public datas: Date[] = [];
   selectedDateIndex: number | null = null;
 
-  constructor(private service: ProgramacaoService) { }
+  @Output() emitirData = new EventEmitter();
+
+  constructor() { }
 
   ngOnInit(): void {
     for(let i = 0; i < 7; i++) {
@@ -35,6 +37,8 @@ export class DateButtonsComponent implements OnInit{
   }
 
   public selecionarData(data: Date) {
+    this.emitirData.emit(data);
+
     console.log(data);
     console.log(this.selectedDateIndex);
   }
