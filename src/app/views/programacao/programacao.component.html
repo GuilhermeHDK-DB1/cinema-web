@@ -1,14 +1,15 @@
-<app-date-buttons
+<app-date-buttons 
     (emitirData)="consultarSessoesPelaData($event)"
     >
 </app-date-buttons>
-<div class="mural" *ngIf="listaDeSessoes.length > 0, else listaDeSessoesVazia">
+<div class="listaDeSessoes" *ngIf="listaDeSessoes.length > 0, else listaDeSessoesVazia">
     <div *ngFor="let sessao of listaDeSessoes">
         <app-sessao [sessao]="sessao"></app-sessao>
     </div>
 </div>
 <ng-template #listaDeSessoesVazia>
     <div class="lista-de-sessoes-vazia ff-montserrat">
+        <img src="../../../assets/filmes/sessoes-nao-encontradas.jpg" alt="Foto de um porquinho falante">
         <p>Isso é tudo pessoal...</p>
     </div>
 </ng-template>
