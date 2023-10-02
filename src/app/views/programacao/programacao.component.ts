@@ -2,6 +2,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProgramacaoService } from 'src/app/services/programacao-service.service';
 import { Sessao } from 'src/app/models/Sessao';
+import { format } from 'date-fns';
 
 @Component({
   selector: 'app-programacao',
@@ -24,9 +25,10 @@ export class ProgramacaoComponent implements OnInit{
 
   public consultarSessoesPelaData(data: Date) {
     console.log("consultarSessoesPelaData", data);
+    const dataFormatada = format(data, 'yyyy-MM-dd')
+    console.log('dataFormatada',dataFormatada)
 
-
-    this.service.consultarSessoesPelaData('2023-10-01')
+    this.service.consultarSessoesPelaData(dataFormatada)
       .subscribe(listaDeSessoes => {
       this.listaDeSessoes = listaDeSessoes;
       this.alimentarThumbnail();
