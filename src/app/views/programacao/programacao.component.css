@@ -1,0 +1,25 @@
+.listaDeSessoes {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.lista-de-sessoes-vazia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.lista-de-sessoes-vazia img {
+    width: 15rem;
+    padding: 0.5rem;
+}
+
+.lista-de-sessoes-vazia p {
+    color: var(--cor-de-texto);
+    font-size: 30px;
+    font-weight: 500;
+    padding: 0.5rem;
+}
