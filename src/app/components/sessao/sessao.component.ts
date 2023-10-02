@@ -30,7 +30,7 @@ export class SessaoComponent {
 
   public comprarIngresso() {
     const cadastrarIngressoCommand: CadastrarIngressoCommand = {
-      clienteId: 100, //valor fixo - alterar depois de implementado o login
+      clienteId: 50, //valor fixo - alterar depois de implementado o login
       sessaoId: this.sessao.id,
       tipo: 0 //valor fixo - alterar depois de implementado o botao de meia entrada ou inteira
     }
