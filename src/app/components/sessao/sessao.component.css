@@ -91,3 +91,9 @@
   background-color: rgb(206, 160, 33);
   margin: 0.5rem;
 }
+
+.botao-comprar-ingressos:hover {
+  transform: translateY(-0.1rem);
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
