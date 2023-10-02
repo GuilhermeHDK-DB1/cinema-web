@@ -27,8 +27,9 @@ export class ProgramacaoService {
     // return this.http.get<Sessao[]>(this.API, { params });
   }
 
+  //https://localhost:44384/Ingresso/adicionar
   public CadastrarIngresso(ingresso: CadastrarIngressoCommand): Observable<IngressoResult> {
-    return this.http.post<IngressoResult>(this.API, ingresso)
+    return this.http.post<IngressoResult>(`${this.API}/Ingresso/adicionar`, ingresso);
   }
 
 }

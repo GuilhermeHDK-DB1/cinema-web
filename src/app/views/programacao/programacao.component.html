@@ -4,7 +4,11 @@
 </app-date-buttons>
 <div class="listaDeSessoes" *ngIf="listaDeSessoes.length > 0, else listaDeSessoesVazia">
     <div *ngFor="let sessao of listaDeSessoes">
-        <app-sessao [sessao]="sessao"></app-sessao>
+        <app-sessao 
+            [sessao]="sessao"
+            (emitirSessao)="cadastrarIngresso($event)"
+            >
+        </app-sessao>
     </div>
 </div>
 <ng-template #listaDeSessoesVazia>

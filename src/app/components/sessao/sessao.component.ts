@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { CadastrarIngressoCommand } from './../../models/CadastrarIngressoCommand';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Sessao } from 'src/app/models/Sessao';
 
 @Component({
@@ -24,4 +25,17 @@ export class SessaoComponent {
     capacidadeDisponivel: 0,
     thumbnail: ""
   };
+
+  @Output() emitirSessao = new EventEmitter();
+
+  public comprarIngresso() {
+    const cadastrarIngressoCommand: CadastrarIngressoCommand = {
+      clienteId: 100, //valor fixo - alterar depois de implementado o login
+      sessaoId: this.sessao.id,
+      tipo: 0 //valor fixo - alterar depois de implementado o botao de meia entrada ou inteira
+    }
+    console.log(cadastrarIngressoCommand);
+    
+    this.emitirSessao.emit(cadastrarIngressoCommand);
+  }
 }

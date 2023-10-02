@@ -22,7 +22,10 @@
             <p class="badge ff-montserrat">{{ sessao.horario | date:'HH:mm' }}</p>
         </div>
     </div>
-    <button class="botao-comprar-ingressos ff-montserrat">
+    <button 
+        class="botao-comprar-ingressos ff-montserrat"
+        (click)="comprarIngresso()"
+        >
         Comprar Ingressos
     </button>
 
